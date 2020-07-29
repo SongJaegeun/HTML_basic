@@ -1,0 +1,24 @@
+여러 사람이 공유데이터를 동시에 사용할때 동시성에 문제가 발생
+데이터 유실문제가 발생할 수 있다.
+ => VCS(Version Control System)프로그램들이 많이 사용됨
+      - CVSC (Centeralized Version Control System) : Subversion
+      - DVCS (Distributed Version Control System) : Git(무료)
+
+     Git => 저장소가 두가지 종류가 있다
+	  1. Local Repository (내 컴퓨터내에 저장소가 따로 위치)
+	  2. Remote/Repository (다른 컴퓨터내에서 저장소가 위치)
+	  => GitHub
+     1. Git 설치( 프로그램 다운로드 후 기본설정으로 설치)
+     2. 환경설정 (user.name,  user.email 환경변수 설정)
+     3. local repository 생성
+         지금 현재 사용하고 있는 HTML_Basic 이라는 프로젝트(폴더)에 대한
+         Local Repository를 생성
+         = > WebStorm의 메뉴를 이용해서 Local Repository를 생성
+	   .git이라는 폴더가 생성
+	 4. commit 과정을 거쳐 우리가 사용하는 모든 파일(환경설정파일 포함)을 Local Respository에 저장
+	    But, 모든 파일 저장 필요 X (환경설정파일 같은 경우 불필요)
+	    불필요한 파일을 commit하지 않기 위해 특정한 파일 하나를 이용
+	    => .gitignore
+	    => 파일 생성(자동 완성 웹사이트)
+	    => python, webstorm 키워드를 입력한 후 생성을 누르면 파일내용이 출력
+	    => 파일을 만들어 저아아
