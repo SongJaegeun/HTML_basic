@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- document type -->
+
+<!-- HTML_은 tag_로  구성된 언어
+     tag_는 두가지 종류
+     1. 시작 태그, 닫는 태그로 구성된 태그
+     2. 시작 태그만 가지고 있는 태그
+-->
+<!-- Tag_는 중첩 구조를 가질 수 있다.
+     하나의 Tag_가 다른 태그를 포함 가능
+     부모-자식 관계
+
+     tag_와 tag_안에 포함된 요소_들을 통칭_해서 element
+
+     HTML_의 대표적 구성 요소
+     head_태그 : 설정 부분
+     body_태그 : Web Browser_에서 rendering_할 데이터
+-->
+
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">  <!--  -->
+        <title>Title</title>
+        <style>
+            h2 {
+                color: bisque;
+                background-color: #3d0303;
+                font-size: 30pt;
+            }
+            .myclass {
+                color: bisque;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div>
+            <h1 class ='myclass'>하</h1> <!-- h_태그: 강조 태그 -->
+            <h2>하</h2>
+            <h3 class ='myclass'>ha</h3>
+            <span>영역 잡는 태그</span>  <!-- span_은 영역만 표시 해주는 태그 -->
+            <div>영역 잡는 태그</div>  <!-- tag_의 종류
+                                         1. block level element: 무조건 1라인을 차지(div)
+                                         2. inline element: 내용에 대한 영역만 차지(span)
+                                       -->
+            <img src="image/car.jpg" width="500" data-author="홍길동">
+                  <!-- width_와 같은 스타일_은 CSS_에서 처리_하는게 바람직 -->
+                  <!-- 'data-'를 접두어_로 붙혀_주면 속성_으로 인정  -->
+
+            <!-- ul 태그 = unordered list
+                 ol 태그 = ordered list
+            -->
+            <ul>
+                <li>서울</li><li>제주</li>
+                <li>인천</li>
+            </ul>
+            <br>
+            <br>
+            <ol>
+                <li>one</li>
+                <li>two</li>
+            </ol>
+            <a href="http://www.naver.com">여기를 클릭</a><br>
+            <!-- 사용자 입력 양식 -->
+            <input type="button" value="click"><br>
+            <input type="text" value="input text"><br>
+            <input type="date"><br>
+            <input type="color"><br>
+        <div>
+    </body>
+</html>
